@@ -3,11 +3,10 @@ self.addEventListener('install', function(event) {
     caches.open('first-app')
       .then(function(cache) {
         cache.addAll([
-          '/latihanmobweb/',
-          '/latihanmobweb/index.html',
-          '/latihanmobweb/src/css/app.css',
-          '/latihanmobweb/src/js/app.js',
-          '/latihanmobweb/offline.html'
+          '/index.html',
+          '/src/css/app.css',
+          '/src/js/app.js',
+          '/offline.html'
         ])
       })
   );
